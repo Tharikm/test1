@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 //serve the html form
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname + '/login.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 // handle form submition
@@ -43,7 +43,7 @@ app.post('/submit',(req,res)=>{
             res.send('Error submittion data');
         }   else{
             console.log('Data submitted successsfully');
-            // res.sendFile(__dirname+'/login.html');
+            // res.sendFile(__dirname+'/index.html');
 
             // retrive data
             // select all data
